@@ -1,5 +1,5 @@
 <?php
-$host = getenv("DB_HOST") ?: "mysql";
+$host = getenv("DB_HOST") ?: "mydb.caja8i6w6ekn.us-east-1.rds.amazonaws.com";
 $user = getenv("DB_USER") ?: "root";
 $pass = getenv("DB_PASSWORD") ?: "rootpass";
 $db   = getenv("DB_NAME") ?: "mydb";
