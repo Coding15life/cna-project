@@ -1,0 +1,29 @@
+_format_version: "3.0"
+services:
+  - name: create
+    url: http://create
+    routes:
+      - name: create
+        paths:
+          - /create
+
+  - name: update
+    url: http://update
+    routes:
+      - name: update
+        paths:
+          - /update
+
+  - name: delete
+    url: http://delete
+    routes:
+      - name: delete
+        paths:
+          - /delete
+
+  - name: home
+    url: http://home
+    routes:
+      - name: home
+        paths:
+          - /home
