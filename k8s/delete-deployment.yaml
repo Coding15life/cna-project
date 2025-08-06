@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: delete-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: delete
+  template:
+    metadata:
+      labels:
+        app: delete
+    spec:
+      containers:
+      - name: delete
+        image: javierlim05/delete-service:latest
+        ports:
+        - containerPort: 80
+          imagePullPolicy: Always

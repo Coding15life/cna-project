@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: update-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: update
+  template:
+    metadata:
+      labels:
+        app: update
+    spec:
+      containers:
+      - name: update
+        image: javierlim05/update-service:latest
+        ports:
+        - containerPort: 80
+          imagePullPolicy: Always

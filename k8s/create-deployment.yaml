@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: create-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: create
+  template:
+    metadata:
+      labels:
+        app: create
+    spec:
+      containers:
+      - name: create
+        image: javierlim05/create-service:latest
+        ports:
+        - containerPort: 80
+          imagePullPolicy: Always
