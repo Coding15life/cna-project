@@ -1,2 +1,0 @@
-FROM php:8.2-apa
-COPY delete.php /var/www/html/
