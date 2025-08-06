@@ -20,10 +20,3 @@ services:
       - name: delete
         paths:
           - /delete
-
-  - name: home
-    url: http://home
-    routes:
-      - name: home
-        paths:
-          - /home
