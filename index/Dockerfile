@@ -1,5 +1,5 @@
 # Use the official PHP image as the base image
-FROM php:latest
+FROM php:apache
 # Copy the PHP app files to the container
 COPY index.php /var/www/html
 COPY db.php /var/www/html
