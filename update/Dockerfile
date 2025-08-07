@@ -1,3 +1,3 @@
-FROM php:8.2-apache
+FROM php:latest
 COPY update.php /var/www/html
-COPY ../db.php /var/www/html
+COPY db.php /var/www/html
