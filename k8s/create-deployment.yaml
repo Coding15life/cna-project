@@ -15,6 +15,6 @@ spec:
       containers:
       - name: create
         image: javierlim05/create:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
-          imagePullPolicy: Always
