@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->bind_param("ssi", $name, $email, $id);
     $stmt->execute();
     $stmt->close();
-    header("Location: http://index/index.php");
+    header("Location: http://54.226.220.205:30083/index.php");
     exit();
 }
 
@@ -25,5 +25,5 @@ $user = $result->fetch_assoc();
     Email: <input name="email" value="<?= $user['email'] ?>" required><br><br>
     <button type="submit">Update</button>
 </form>
-<a href="http://index/index.php">Back</a>
+<a href="http://54.226.220.205:30083/index.php">Back</a>
 </body></html>
