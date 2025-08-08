@@ -5,7 +5,7 @@
 <body>
 <h2>Team Members in Class -T01/T02 Team – 01/02/03/04 </h2>
 <h2>Test</h2>
-<a href="create.php">Add New Team Member</a>
+<a href="http://create/create.php">Add New Team Member</a>
 <table border="1" cellpadding="8" cellspacing="0">
 <tr><th>ID</th><th>Student Name</th><th>Email</th><th>Actions</th></tr>
 <?php
@@ -16,8 +16,8 @@ while ($row = $result->fetch_assoc()) {
             <td>{$row['name']}</td>
             <td>{$row['email']}</td>
             <td>
-                <a href='update.php?id={$row['id']}'>Edit</a> |
-                <a href='delete.php?id={$row['id']}'>Delete</a>
+                <a href='http://update/update.php?id={$row['id']}'>Edit</a> |
+                <a href='http;//delete/delete.php?id={$row['id']}'>Delete</a>
             </td>
           </tr>";
 }
