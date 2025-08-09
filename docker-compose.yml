@@ -17,26 +17,26 @@ services:
       - ./kong/kong.yml:/kong/kong.yml
     depends_on:
       - create
-      - update
       - delete
       - index
+      - update
 
   create:
     build: ./create
     ports:
-      - "9001:80"
-
-  update:
-    build: ./update
-    ports:
-      - "9002:80"
+      - "30081:80"
 
   delete:
     build: ./delete
     ports:
-      - "9003:80"
+      - "30082:80"
 
   index:
     build: ./index
     ports:
-      - "9004:80"
+      - "30083:80"
+
+  update:
+    build: ./update
+    ports:
+      - "30084:80"
