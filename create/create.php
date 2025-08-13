@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->bind_param("ss", $name, $email);
     $stmt->execute();
     $stmt->close();
-    header("Location: http://54.221.202.90:30083/index.php");
+    header("Location: http://54.82.126.154:30083/index.php");
     exit();
 }
 ?>
@@ -21,6 +21,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     Email: <input name="email" required><br><br>
     <button type="submit">Create</button>
 </form>
-<a href="http://54.221.202.90:30083/index.php">Back</a>
+<a href="http://54.82.126.154:30083/index.php">Back</a>
 </body>
 </html>
